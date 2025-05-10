@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+  web-app:
+    image: nginx:latest
+    ports:
+      - "80:80"
+  util:
+    image: vinsdocker/util
+    command: "curl web-app"
+    depends_on:
+      - web-app

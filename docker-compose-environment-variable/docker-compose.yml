@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  ubuntu:
+    image: ubuntu:${TAG:-latest}
+    command: "env"
+    env_file:
+      - sample.env
+    environment:
+      - MY_ENV_VAR=HelloWorld
+      - MY_ENV_VAR2=HelloWorld2  
