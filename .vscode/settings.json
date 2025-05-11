@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "java-table-dockerfile",
+        "JobService/src/main/java/hub/haresh/jobservice"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
